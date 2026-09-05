@@ -19,7 +19,7 @@ body {
 
 .headline {
   font-family: "pacifico", serif;
-  color: #00ff30;
+  color: #00ffaa;
   font-size: 54px;
   filter: drop-shadow(2px 6px 8px rgba(0, 0, 0, 0.5));
 }
@@ -51,7 +51,7 @@ body {
 .footer {
   background-color: rgb(35, 38, 41);
   color: white;
-  padding: 100px;
+  padding: 50px;
   display: flex;
   justify-content: space-between;
   padding-bottom: 0;
@@ -61,10 +61,11 @@ body {
   color: white;
   text-decoration: none;
   cursor: pointer;
+  padding-bottom: 16px;
 }
 
 .footer-link:hover {
-  color: #00ff30;
+  color: #00ffaa;
 }
 
 .menu {
@@ -82,21 +83,21 @@ body {
 }
 
 .menu a:hover {
-  color: #00ff72;
+  color: #00ffaa;
 }
 
 .order-btn {
   color: black !important;
-  background-color: #00ff30;
+  background-color: #00ffaa;
   padding: 16px;
 }
 
 .order-btn:hover {
-  background-color: #3bc211;
+  background-color: #00ffaa;
 }
 
 a {
-  color: #3bc211;
+  color: #00ffaa;
   text-decoration: none;
 }
 
