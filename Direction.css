@@ -1,0 +1,94 @@
+body {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Iceberg {
+  font-family: "Iceberg", serif;
+}
+
+.menu {
+  position: absolute;
+  top: 32;
+  right: 100px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 32px;
+  filter: drop-shadow(2px 6px 8px rgba(0, 0, 0, 0.5));
+}
+
+.menu a:hover {
+  color: #0ddb8c;
+}
+
+.order-btn:hover {
+  background-color: #0ddb8c;
+}
+
+a {
+  color: #0ddb8c;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#main-container {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 900px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.googlemaps {
+  height: 350px;
+  width: 100%;
+}
+
+.footer {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: calc(100vh - 900px);
+  color: white;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+  background-image: url("./img/start.background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-img {
+  object-fit: cover;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  padding-bottom: 16px;
+}
+
+.footer-link:hover {
+  color: #0ddb8c;
+}

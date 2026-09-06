@@ -1,0 +1,25 @@
+.footer {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: calc(100vh - 900px);
+  color: white;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+  background-image: url("./img/start.background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  padding-bottom: 16px;
+}
+
+.footer-link:hover {
+  color: #0ddb8c;
+}

@@ -9,9 +9,7 @@ body {
   object-fit: cover;
 }
 
-.footer-img {
-  object-fit: cover;
-}
+
 
 .Iceberg {
   font-family: "Iceberg", serif;
@@ -61,6 +59,10 @@ body {
   background-image: url("./img/start.background.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.footer-img {
+  object-fit: cover;
 }
 
 .footer-link {
