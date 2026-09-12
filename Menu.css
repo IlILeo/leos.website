@@ -14,6 +14,7 @@ body {
   position: absolute;
   top: 32;
   right: 100px;
+  z-index: 1;
 }
 
 .menu a {

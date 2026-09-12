@@ -12,17 +12,33 @@ body {
   object-fit: cover;
 }
 
-
-
-.Iceberg {
-  font-family: "Iceberg", serif;
+.menu {
+  position: absolute;
+  top: 32;
+  right: 100px;
+  z-index: 1;
 }
 
-.headline {
-  font-family: "pacifico", serif;
-  color: #0ddb8c;
-  font-size: 54px;
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 32px;
   filter: drop-shadow(2px 6px 8px rgba(0, 0, 0, 0.5));
+}
+
+.menu a:hover {
+  color: #0ddb8c;
+}
+
+a {
+  color: #0ddb8c;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 #main-container {
@@ -39,14 +55,11 @@ body {
   flex-direction: column;
 }
 
-.container {
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-.googlemaps {
-  height: 350px;
-  width: 100%;
+.headline {
+  font-family: "pacifico", serif;
+  color: #0ddb8c;
+  font-size: 54px;
+  filter: drop-shadow(2px 6px 8px rgba(0, 0, 0, 0.5));
 }
 
 .footer {
@@ -78,37 +91,4 @@ body {
 
 .footer-link:hover {
   color: #0ddb8c;
-}
-
-.menu {
-  position: absolute;
-  top: 32;
-  right: 100px;
-  z-index: 1;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  margin-left: 32px;
-  filter: drop-shadow(2px 6px 8px rgba(0, 0, 0, 0.5));
-}
-
-.menu a:hover {
-  color: #0ddb8c;
-}
-
-.order-btn:hover {
-  background-color: #0ddb8c;
-}
-
-a {
-  color: #0ddb8c;
-  text-decoration: none;
-}
-
-a:hover {
-  font-weight: bold;
-  text-decoration: underline;
 }
