@@ -1,6 +1,9 @@
 body {
   margin: 0px;
   font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .welcome-img {
@@ -48,6 +51,7 @@ body {
 
 .footer {
   position: relative;
+  margin-top: auto;
   box-sizing: border-box;
   width: 100%;
   min-height: calc(100vh - 900px);
