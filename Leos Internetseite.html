@@ -3,6 +3,7 @@
     <title>Leos Internetseite</title>
     <link rel="stylesheet" href="./Leos Internetseite.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,23 +22,27 @@
   </head>
 
   <body>
-    <img class="welcome-img" src="./img/start.background.jpg" />
+    <section class="scroll-scene" id="scroll-scene">
+      <div class="hero-stage">
+        <img class="welcome-img" id="welcome-img" src="./img/start.background.jpg" alt="" />
 
-    <div class="menu">
-      <a href="./Direction.html">Location</a>
-      <a href="./Menu.html">Menu</a>
-      <a href="./impressum.html">Impressum</a>
-      <a href="./datenschutz.html">Copyright</a>
-    </div>
+        <nav class="menu">
+          <a href="./Direction.html">Location</a>
+          <a href="./Menu.html">Menu</a>
+          <a href="./impressum.html">Impressum</a>
+          <a href="./datenschutz.html">Copyright</a>
+        </nav>
 
-    <div id="main-container">
-      <h1 class="headline">Leonard Albert Zschelletzschky</h1>
-      Hier findest du eine Spaßige Internetseite von Leo. <br />
-      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
-        >Hier</a
-      >
-      kannst du ein Video von Leo sehen.
-    </div>
+        <div id="main-container">
+          <h1 class="headline">Leonard Albert Zschelletzschky</h1>
+          Hier findest du eine Spaßige Internetseite von Leo. <br />
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
+            Hier
+          </a>
+          kannst du ein Video von Leo sehen.
+        </div>
+      </div>
+    </section>
 
     <div class="container footer">
       <div>(c) Copy the right of the Copy</div>
@@ -47,5 +52,37 @@
         <a href="datenschutz.html" class="footer-link">Copyright</a>
       </div>
     </div>
+
+    <script>
+      const scene = document.querySelector("#scroll-scene");
+      const image = document.querySelector("#welcome-img");
+      const content = document.querySelector("#main-container");
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      let framePending = false;
+
+      function updateScrollScene() {
+        const sceneTop = scene.getBoundingClientRect().top;
+        const scrollDistance = scene.offsetHeight - window.innerHeight;
+        const progress = Math.max(0, Math.min(1, -sceneTop / scrollDistance));
+
+        if (!reduceMotion.matches) {
+          image.style.transform = `scale(${1 + progress * 0.45}) rotate(${progress * 2}deg)`;
+          content.style.opacity = String(1 - progress);
+          content.style.transform = `translateY(${-progress * 40}px)`;
+        }
+
+        framePending = false;
+      }
+
+      window.addEventListener("scroll", () => {
+        if (!framePending) {
+          window.requestAnimationFrame(updateScrollScene);
+          framePending = true;
+        }
+      }, { passive: true });
+
+      window.addEventListener("resize", updateScrollScene);
+      updateScrollScene();
+    </script>
   </body>
 </html>
