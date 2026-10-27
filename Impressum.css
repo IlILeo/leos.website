@@ -3,5 +3,7 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background-image: url('./img/Leo_SetUp_Illu.PNG');
+  background-color: #000000;
+  background-repeat: no-repeat;
   background-size: cover;
 }
