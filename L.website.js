@@ -27,7 +27,7 @@ window.addEventListener(
     }
   },
   { passive: true },
-);
+); 
 
 window.addEventListener("resize", updateScrollScene);
 updateScrollScene();

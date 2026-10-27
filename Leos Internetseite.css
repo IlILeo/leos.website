@@ -74,13 +74,6 @@ a:hover {
   will-change: opacity, transform;
 }
 
-.headline {
-  font-family: "pacifico", serif;
-  color: #0ddb8c;
-  font-size: 54px;
-  filter: drop-shadow(2px 6px 8px rgba(0, 0, 0, 0.5));
-}
-
 .footer {
   position: relative;
   margin-top: auto;
@@ -92,13 +85,6 @@ a:hover {
   display: flex;
   justify-content: space-between;
   padding-bottom: 0;
-  background-image: url("./img/start.background.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.footer-img {
-  object-fit: cover;
 }
 
 .footer-link {
@@ -125,11 +111,7 @@ a:hover {
     font-size: 14px;
     margin-left: 0;
   }
-
-  .headline {
-    font-size: clamp(32px, 9vw, 48px);
-  }
-
+  
   .footer {
     padding: 28px 20px 16px;
   }
