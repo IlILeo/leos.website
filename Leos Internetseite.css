@@ -9,12 +9,3 @@ body {
   height: 100vh;
   background-position: center;
 }
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  color: #ffffff;
-  padding: 10px;
-  position: fixed;
-}
