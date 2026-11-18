@@ -16,11 +16,16 @@ main {
   flex: 1;
 }
 
-.button-welcome {
+.button-group {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  gap: 12px;
+}
+
+.button-group button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
@@ -33,4 +38,9 @@ main {
   padding: 10px 25%;
   display: flex;
   justify-content: space-between;
+}
+
+.impress a {
+  color: #ffffff;
+  text-decoration: none;
 }

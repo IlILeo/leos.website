@@ -23,3 +23,8 @@ main {
   display: flex;
   justify-content: space-between;
 }
+
+.impress a {
+  color: #ffffff;
+  text-decoration: none;
+}
