@@ -21,4 +21,6 @@ main {
   padding: 10px 25%;
   display: flex;
   justify-content: space-between;
+  color: #ffffff;
+  text-decoration: none;
 }
