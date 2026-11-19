@@ -16,22 +16,38 @@ main {
   flex: 1;
 }
 
-.button-group {
+.button-welcome {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   gap: 12px;
-}
-
-.button-group button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   background-color: #17ce88;
   border: 1px solid #17ce88;
   color: rgb(0, 0, 0);
+}
+
+.button-reload {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 12px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #17ce88;
+  border: 1px solid #17ce88;
+  color: rgb(0, 0, 0);
+}
+
+.button-reload[hidden] {
+  display: none;
 }
 
 .impress {
